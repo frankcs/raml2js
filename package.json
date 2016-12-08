@@ -1,0 +1,20 @@
+{
+  "name": "raml2js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -c test/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "merge": "^1.2.0",
+    "promise": "^7.1.1",
+    "raml-parser": "^0.8.18"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1"
+  }
+}

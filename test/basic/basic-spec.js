@@ -7,7 +7,7 @@ console.log(__dirname);
 describe('Raml js generator', function() {
   'use strict';
 
-  var destinationPath = '/learn/raml2js/dist/client.js';
+  var destinationPath = 'dist/client.js';
   var generator = new Generator('test/basic/raml-def/basic-api.raml', {
     output: destinationPath
   });
@@ -24,7 +24,7 @@ describe('Raml js generator', function() {
     });
 
     it('generated file file should behave as a module and export a function', function() {
-      Client = require(destinationPath);
+      Client = require('../../'+destinationPath);
       expect(Client).to.be.ok();
     });
 

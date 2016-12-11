@@ -2,6 +2,12 @@
 title: Amazon simple storage API
 version: 1
 baseUri: https://{destinationBucket}.s3.amazonaws.com
+protocols: [ HTTP, HTTPS ]
+mediaType: application/json
+baseUriParameters:
+  destinationBucket:
+    displayName: Destination Bucket
+    type: string
 /:
   post:
     description: The POST operation adds an object to a specified bucket using HTML forms.

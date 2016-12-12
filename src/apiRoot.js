@@ -26,7 +26,6 @@
       'this.getCurrentUrl = function(){' +
       'var result = this.baseUri;' +
       'for (var param in this.baseUriParameters){' +
-      'console.log(param);' +
       'result = result.replace("{"+param+"}", this.baseUriParameters[param]());' +
       '}' +
       'return result;' +
